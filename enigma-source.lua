@@ -58,7 +58,7 @@ local remove = table.remove
 local concat = table.concat
 
 getgenv().library = {
-    directory = 'someone.else',
+    directory = getgenv().NameOfScriptForDirectory or "Script",
     folders = {
         '/fonts',
         '/configs',
@@ -204,12 +204,12 @@ do
     local ProggyTiny = Register_Font('ProggyTiny', 200, 'Normal', {
         Id = 'ProggyTiny.ttf',
         Font = game.HttpGet(game, 
-[[https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/tahoma_bold.ttf]]),
+[[https://github.com/barbarianTopG/enigma/raw/refs/heads/main/tahoma_bold.ttf]]),
     })
     local ProggyClean = Register_Font('ProggyClean', 200, 'normal', {
         Id = 'ProggyClean.ttf',
         Font = game.HttpGet(game, 
-[[https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/ProggyClean.ttf]]),
+[[https://github.com/barbarianTopG/enigma/raw/refs/heads/main/ProggyClean.ttf]]),
     })
 
     fonts = {
